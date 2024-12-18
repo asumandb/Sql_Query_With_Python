@@ -63,6 +63,6 @@ cursor.execute("SELECT * FROM Books WHERE Price < 20")
 for row in cursor.fetchall():
     print(row)
 
-#cursor.execute("DROP TABLE Books")
-#print("Books tablosu silindi.")
-#connection.commit()
+cursor.execute("DROP TABLE Books")
+print("Books tablosu silindi.")
+connection.commit()
